@@ -23,17 +23,17 @@
 
 @font-face {
   font-family: "Mont Blanc";
-  src: url("./assets/fonts/montblanc/MontBlanc-Trial-Black.woff2") format("woff2"), url("./assets/fonts/montblanc/MontBlanc-Trial-Black.woff") format("woff");
+  src: url("../assets/fonts/montblanc/MontBlanc-Trial-Black.woff2") format("woff2"), url("./assets/fonts/montblanc/MontBlanc-Trial-Black.woff") format("woff");
 }
 
 @font-face {
   font-family: "Mont Blanc Regular";
-  src: url("./assets/fonts/montblanc/MontBlanc-Trial-Regular.woff2") format("woff2"), url("./assets/fonts/montblanc/MontBlanc-Trial-Regular.woff") format("woff");
+  src: url("../assets/fonts/montblanc/MontBlanc-Trial-Regular.woff2") format("woff2"), url("./assets/fonts/montblanc/MontBlanc-Trial-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Mont Blanc Bold";
-  src: url("./assets/fonts/montblanc/MontBlanc-Trial-Bold.woff2") format("woff2"), url("./assets/fonts/montblanc/MontBlanc-Trial-Bold.woff") format("woff");
+  src: url("../assets/fonts/montblanc/MontBlanc-Trial-Bold.woff2") format("woff2"), url("./assets/fonts/montblanc/MontBlanc-Trial-Bold.woff") format("woff");
 }
 
 html {
