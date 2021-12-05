@@ -1,0 +1,39 @@
+// colors
+$cornflower-blue: #5B90F5;
+$festival: #F9F871;
+$midnight: #00143C;
+$zircon: #F7F9FF;
+$celeste: #CFD1CE;
+
+$blue-border: #D5E2FE;
+
+$liner-blue: ( #9EBFFF, #5B90F5);
+$orange-liner: (#FA783C, #FFA175);
+
+// font
+$text-title: 54px;
+$text-subtitle: 36px;
+
+// bg-gradient
+.bg-blue-gradient {
+    background: linear-gradient(to bottom right, $liner-blue);
+}
+
+.bg-zircon {
+    background: $zircon;
+}
+
+.bg-festival {
+    background: $festival;
+}
+
+.b-blue {
+    border-color: $blue-border
+}
+
+@media screen and (max-width: 767px){
+    .sub-title {
+        line-height: 0.75rem;
+    }
+}
+

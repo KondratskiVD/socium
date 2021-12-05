@@ -1,0 +1,19 @@
+@import "variables";
+@import "fonts";
+
+html {
+    font-family: 'Mont Blanc Regular', Arial, sans-serif;
+    color: $midnight;
+}
+
+.text-bold {
+    font-family: 'Mont Blanc Bold', Arial, sans-serif;
+}
+
+.text-175xl {
+    font-size: 1.75rem;
+}
+
+.w-header {
+    width: calc(100% - 2rem);
+}

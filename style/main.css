@@ -1,0 +1,55 @@
+.bg-blue-gradient {
+  background: -webkit-gradient(linear, left top, right bottom, from(#9EBFFF), to(#5B90F5));
+  background: linear-gradient(to bottom right, #9EBFFF, #5B90F5);
+}
+
+.bg-zircon {
+  background: #F7F9FF;
+}
+
+.bg-festival {
+  background: #F9F871;
+}
+
+.b-blue {
+  border-color: #D5E2FE;
+}
+
+@media screen and (max-width: 767px) {
+  .sub-title {
+    line-height: 0.75rem;
+  }
+}
+
+@font-face {
+  font-family: "Mont Blanc";
+  src: url("/assets/fonts/montblanc/MontBlanc-Trial-Black.woff2") format("woff2"), url("/assets/fonts/montblanc/MontBlanc-Trial-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Mont Blanc Regular";
+  src: url("/assets/fonts/montblanc/MontBlanc-Trial-Regular.woff2") format("woff2"), url("/assets/fonts/montblanc/MontBlanc-Trial-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Mont Blanc Bold";
+  src: url("/assets/fonts/montblanc/MontBlanc-Trial-Bold.woff2") format("woff2"), url("/assets/fonts/montblanc/MontBlanc-Trial-Bold.woff") format("woff");
+}
+
+html {
+  font-family: 'Mont Blanc Regular', Arial, sans-serif;
+  color: #00143C;
+}
+
+.text-bold {
+  font-family: 'Mont Blanc Bold', Arial, sans-serif;
+}
+
+.text-175xl {
+  font-size: 1.75rem;
+}
+
+.w-header {
+  width: calc(100% - 2rem);
+}
+/*# sourceMappingURL=main.css.map */
