@@ -17,3 +17,16 @@ html {
 .w-header {
     width: calc(100% - 2rem);
 }
+
+.list > li:before {
+    // content: '';
+    // color: blue;
+    background-color: $cornflower-blue;
+    width: 7px !important;
+    height: 7px !important;
+    content:"";
+    margin-right: 15px;
+    margin-top: 6px;
+    float: left;
+    border-radius: 50%;
+}
