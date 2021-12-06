@@ -9,9 +9,10 @@
     <title>Vite App</title>
   </head>
   <body class="px-4">
-    <section class="h-screen flex flex-col pb-4">
-      <!-- NAV-->
-      <div class="bg-white w-header fixed py-2">
+    <section class="min-h-screen flex flex-col pb-4">
+      <!-- NAV -->
+      <div class="fixed py-2 px-5 w-full backdrop-filter backdrop-blur left-0 rigth-0 z-10"
+      style="background: rgba(255, 255, 255, 0.7);">
         <nav class="m-auto max-w-screen-xl flex items-center justify-between">
           <div class="flex justify-between items-center">
             <img src="./assets/images/logo.png" class="w-16 h-16 md:w-24 md:h-24" alt="logo">
@@ -31,7 +32,7 @@
           </div>
         </nav>
       </div>
-      <!-- HERO-->
+      <!-- HERO -->
       <div style="max-width: 1350px;" class="bg-zircon flex-grow mt-24 md:mt-28 m-auto w-full rounded-3xl">
         <div class="m-auto max-w-screen-xl flex py-2 md:py-10 px-3 flex-col md:flex-row">
           <div class="md:w-1/2 md:py-10 flex flex-col items-start justify-between order-2 md:order-1">
@@ -39,7 +40,7 @@
               <h1 class="text-2xl md:text-5xl text-bold">
                 Пространство <br class="hidden md:block">для развития <span class="bg-festival rounded-xl px-1 inline-block">счастливой</span> личности
               </h1>
-              <h2 class="text-base md:text-2xl mt-6">Готовим к жизни, а не к экзаменам. </h2>
+              <p class="text-base md:text-2xl mt-6">Готовим к жизни, а не к экзаменам.</p>
             </div>
             <button class="bg-blue-gradient text-white py-3 px-12 rounded-xl b-blue border-4 w-full md:w-auto mt-8">
               Подробнее
@@ -50,6 +51,47 @@
           </div>
         </div>
       </div>
+    </section>
+    <!-- INTRO -->
+    <div style="clear: both;"></div>
+    <section class="m-auto max-w-screen-xl my-12 md:my-28">
+      <h2 class="text-2xl md:text-5xl text-bold">У нас на тренингах</h2>
+      <p class="text-base md:text-2xl mt-4 md:mt-8">В интерактивной форме <br class="md:hidden">помогаем детям 12 - 16 лет развивать:</p>
+      <div class="grid-cols-2 md:grid-cols-4 grid gap-4 mt-6 md:mt-12">
+        <article class="flex flex-col items-center">
+          <img src="./assets/images/manipulation.png" class="h-40 md:h-60 w-auto mb-5 md:mb-10" alt="защита от манипуляций">
+          <p class="text-center text-sm md:text-xl">Способность критически мыслить, распознавать и противостоять манипуляциям</p>
+        </article>
+        <article class="flex flex-col items-center">
+          <img src="./assets/images/connecting.png" class="h-40 md:h-60 w-auto mb-5 md:mb-10" alt="навыки эффективного общения">
+          <p class="text-center text-sm md:text-xl">Навыки эффективного общения</p>
+        </article>
+        <article class="flex flex-col items-center">
+          <img src="./assets/images/confidence.png" class="h-40 md:h-60 w-auto mb-5 md:mb-10" alt="уверенность в себе и лидерские качества">
+          <p class="text-center text-sm md:text-xl">Способность проявлять себя в коллективе и уверенность в себе</p>
+        </article>
+        <article class="flex flex-col items-center">
+          <img src="./assets/images/relationship.png" class="h-40 md:h-60 w-auto mb-5 md:mb-10" alt="крепкие отношения">
+          <p class="text-center text-sm md:text-xl">Умение строить крепкие издоровые отношения, а также  многое другое.</p>
+        </article>
+      </div>
+    </section>
+    <!-- WHY IMPORTANT -->
+    <section class="bg-cornflower-blue" style="margin: -1rem">
+      <div class="m-auto max-w-screen-xl px-5 py-12 md:py-20 relative">
+        <img class="absolute h-32 right-0 top-0" src="./assets/images/balb.png" alt="лампочка">
+        <h2 class="text-2xl md:text-5xl text-bold pr-16">
+          <span class="bg-festival rounded-lg px-1 inline-block">Почему</span><span class="text-white"> это образование важно?</span>
+        </h2>
+        <p class="text-base md:text-xl text-white mt-6">Неуверенность в себе, сложности в общении с окружающими, 
+          непонимание собственных целей, собственных чувств и эмоций
+          - это частые <b>трудности, с которыми сталкиваются подростки.</b>
+          <br><br>
+          И от того, насколько эффективно ребенок их преодолеет во многом зависит его <b>самореализация, способность построить счастливую жизнь и отношения.</b> 
+          <br><br>
+          Поэтому мы разработали <b>курс интерактивных тренингов для детей 12 - 16 лет,</b> которые  заложат основы для самореализации и будущих достижений ребенка, а также курс будет профилактикой предотвращения психологических проблем.
+          </p> 
+      </div> 
     </section>
   </body>
 </html>
