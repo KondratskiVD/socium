@@ -31,8 +31,30 @@ $text-subtitle: 36px;
     background: $cornflower-blue;
 }
 
+.bg-blue-white {
+    background: linear-gradient($cornflower-blue 85%, #fff 15%);
+}
+
 .b-blue {
     border-color: $blue-border
+}
+
+.bg_card_number {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    position: absolute;
+    top: -25px;
+    transform: translateX(-50%);
+    left: 50%;
+    font-weight: bold;
+    background-image: url("/assets/images/card_number.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
 }
 
 @media screen and (max-width: 767px){
