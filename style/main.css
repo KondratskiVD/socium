@@ -95,6 +95,11 @@
   max-width: 96rem;
 }
 
+.btn-shadow {
+  -webkit-box-shadow: 10px 10px 30px 0px #0C234D33;
+          box-shadow: 10px 10px 30px 0px #0C234D33;
+}
+
 @font-face {
   font-family: "Mont Blanc";
   src: url("./assets/fonts/montblanc/MontBlanc-Trial-Black.woff2") format("woff2"), url("./assets/fonts/montblanc/MontBlanc-Trial-Black.woff") format("woff");
