@@ -3,6 +3,11 @@
   background: linear-gradient(to bottom right, #9EBFFF, #5B90F5);
 }
 
+.bg-orange-gradient {
+  background: -webkit-gradient(linear, left top, right bottom, from(#FFA175), to(#FA783C));
+  background: linear-gradient(to bottom right, #FFA175, #FA783C);
+}
+
 .bg-zircon {
   background: #F7F9FF;
 }
@@ -24,6 +29,10 @@
   border-color: #D5E2FE;
 }
 
+.b-orange {
+  border-color: #8C91C8;
+}
+
 .bg_card_number {
   width: 60px;
   height: 50px;
@@ -43,7 +52,7 @@
           transform: translateX(-50%);
   left: 50%;
   font-weight: bold;
-  background-image: url("/assets/images/card_number.png");
+  background-image: url("../assets/images/card_number.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -52,6 +61,38 @@
   .sub-title {
     line-height: 0.75rem;
   }
+}
+
+@media screen and (min-width: 767px) {
+  .w-8xl {
+    width: 28rem !important;
+  }
+}
+
+.ui-state-active {
+  background: #5B90F5 !important;
+  border: none !important;
+  color: white;
+  font-weight: bold !important;
+}
+
+.ui-state-default {
+  background: #5B90F5 !important;
+  border: none !important;
+  color: white !important;
+  border-bottom: 1px solid white !important;
+  padding: 1rem 0 !important;
+}
+
+.ui-accordion-content {
+  border-radius: 1rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  padding: 1rem !important;
+}
+
+.max-w-8xl {
+  max-width: 96rem;
 }
 
 @font-face {
