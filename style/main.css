@@ -100,6 +100,32 @@
           box-shadow: 10px 10px 30px 0px #0C234D33;
 }
 
+.slider-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider-arrow {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #5B90F5;
+  cursor: pointer;
+}
+
+.slider-arrow:hover {
+  color: white;
+  background-color: #5B90F5;
+}
+
 @font-face {
   font-family: "Mont Blanc";
   src: url("./assets/fonts/montblanc/MontBlanc-Trial-Black.woff2") format("woff2"), url("./assets/fonts/montblanc/MontBlanc-Trial-Black.woff") format("woff");

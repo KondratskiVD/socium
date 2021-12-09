@@ -104,3 +104,25 @@ $text-subtitle: 36px;
 .btn-shadow {
     box-shadow: 10px 10px 30px 0px #0C234D33;
 }
+
+.slider-arrows{
+    display: flex;
+    justify-content: center;
+}
+
+.slider-arrow {
+    display:inline-block;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    line-height:30px;
+    text-align:center;
+    font-weight:bold;
+    color: $cornflower-blue;
+    cursor:pointer;
+}
+
+.slider-arrow:hover {
+    color: white;
+    background-color: $cornflower-blue;
+}
