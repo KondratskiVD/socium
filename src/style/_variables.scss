@@ -21,9 +21,18 @@ $text-subtitle: 36px;
 .bg-orange-gradient {
     background: linear-gradient(to bottom right, $orange-liner);
 }
-
+.text-cornflower {
+    color: $cornflower-blue;
+}
 .bg-zircon {
     background: $zircon;
+}
+.bg-midnight {
+    background: $midnight;
+}
+
+.text-midnight {
+    color: $midnight;
 }
 
 .bg-festival {
@@ -105,7 +114,7 @@ $text-subtitle: 36px;
     box-shadow: 10px 10px 30px 0px #0C234D33;
 }
 
-.slider-arrows{
+.slider-arrows, .slider-arrows-2{
     display: flex;
     justify-content: center;
 }

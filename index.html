@@ -375,9 +375,9 @@
         <div class="slider-arrows mt-4"></div>
     </section>
     <!-- FORM -->
-    <section class="" style="margin: -1rem">
-      <div class="bg-blue-gradient m-auto max-w-screen-xl px-5 py-12 md:py-20 relative rounded-2xl">
-        <h3 class="text-white text-xl">Мы можем решить психологические проблемы, но наша главная задача  - предотвратить их!</h3>
+    <section>
+      <div class="bg-blue-gradient m-auto max-w-screen-xl px-5 py-12 md:py-20 relative">
+        <h3 class="text-white text-xl mb-12">Мы можем решить психологические проблемы, но наша главная задача  - <b>предотвратить их!</b></h3>
         <form class="bg-zircon px-3 py-8 rounded-lg">
           <p class="text-xl font-bold mb-4">Запишитесь на бесплатную консультацию</p>
           <div class="py-3">
@@ -397,14 +397,136 @@
         </form>
       </div>
     </section>
-    <script type="text/javascript">
+    <!-- AUTHORS -->
+    <section class="m-auto max-w-screen-xl my-12 md:my-28">
+      <h2 class="text-2xl md:text-5xl text-bold mb-8">
+        <span class="bg-festival rounded-lg px-1 inline-block">Авторы </span>программы
+      </h2>
+      <p class="mb-12">
+        Тренинги разработаны на основе исследований  классической и социальной психологии профессиональными педагогами-психологами.
+      </p>
+      <div class="slider_authors">
+        <div class="sm:p-2">
+          <div class="rounded-2xl bg-zircon pb-2 overflow-hidden">
+            <img src="./assets/images/veronika.png" class="w-full" alt="Комфортная атмосфера">
+            <div class="p-3">
+              <p class="text-2xl font-bold mb-5">Вероника Михненко</p>
+              <p class="mb-5">Практикующий психолог-консультант. Эксперт в вопросах детской психологии и педагогики. </p>
+              <p class="text-cornflower">Читать больше<i class="fas fa-arrow-right ml-3"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="sm:p-2">
+          <div class="rounded-2xl bg-zircon pb-2 overflow-hidden relative">
+            <img src="./assets/images/irina.png" class="w-full" alt="опытный преподаватель">
+            <div class="p-3">
+              <p class="text-2xl font-bold mb-5">Ирина Євстигнеева</p>
+              <p class="mb-5">Практикующий психолог-консультант. Эксперт в вопросах детской психологии и педагогики. </p>
+              <p class="text-cornflower">Читать больше<i class="fas fa-arrow-right ml-3"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="sm:p-2">
+          <div class="rounded-2xl overflow-hidden relative">
+            <img src="./assets/images/lena.png" class="w-full" alt="индивидуальный подход">
+            <div class="p-3">
+              <p class="text-2xl font-bold mb-5">Елена Неверович</p>
+              <p class="mb-5">Практикующий психолог-консультант. Эксперт в вопросах детской психологии и педагогики. </p>
+              <p class="text-cornflower">Читать больше<i class="fas fa-arrow-right ml-3"></i></p>
+            </div>          </div>
+        </div>
+      </div>
+      <div class="slider-arrows-2 mt-4"></div>
+    </section>
+    <!-- CONTACT -->
+    <section class="bg-midnight text-white" style="margin: -1rem">
+      <div class="m-auto max-w-screen-xl mt-12 md:mt-28 px-5 py-12">
+        <h2 class="text-2xl md:text-5xl text-bold mb-8">Контакты</h2>
+        <div class="flex flex-col md:flex-row">
+          <div class="text-lg md:w-1/2 mb-6 md:mb-0">
+            <p class="mb-2">+380 63 30 80 339</p>
+            <p class="mb-2">+380 67 45 07 601</p>
+            <p class="font-bold mb-6">Присоединяйтесь к нам в социальных сетях </p>
+            <p class="mb-6">Получайте полезную информацию и следите за последними новостями школы.</p>
+            <ul class="flex">
+              <li class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-6"><i class="fab fa-2x fa-facebook-f text-midnight"></i></li>
+              <li class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-6"><i class="fab fa-2x fa-instagram text-midnight"></i></li>
+              <li class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-6"><i class="fab fa-2x fa-youtube text-midnight"></i></li>
+            </ul>
+          </div>
+          <div class="w-1/2">
+            <p class="font-bold text-lg mb-6">Как нас найты</p>
+            <p>г. Запорожья, бул. Т.Шевченко 21А, поверх 4, офіс 42</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MODALS -->
+    <!-- <button id="create-user">Create new user</button> -->
+
+    <!-- <div id="dialog-form" title="Create new user">
+      <p class="validateTips">All form fields are required.</p>
+     
+      <form>
+        <fieldset>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" value="Jane Smith" class="text ui-widget-content ui-corner-all">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" value="jane@smith.com" class="text ui-widget-content ui-corner-all">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" value="xxxxxxx" class="text ui-widget-content ui-corner-all">
+     
+          <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+        </fieldset>
+      </form>
+    </div> -->
+
+    <script type="text/javascript">      
       $(document).ready(function(){
+        $( "#create-user" ).button().on( "click", function() {
+          dialog.dialog( "open" );
+        });
+
         $('.slider_class').slick({
           dots: false,
           infinite: true,
           speed: 500,
           fade: false,
           appendArrows:'.slider-arrows',
+          prevArrow:'<span class="slider-arrow"><i class="fas fa-chevron-left"></i></span>',
+          nextArrow:'<span class="slider-arrow"><i class="fas fa-chevron-right"></i></span>',
+          autoplaySpeed: 2000,
+          slidesToShow: 3,
+          responsive: [
+            {
+              breakpoint: 640,
+              settings: {
+                fade: true,
+                arrows: true,
+                centerMode: true,
+                slidesToShow: 1,
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                fade: false,
+                arrows: false,
+                arrows: true,
+                slidesToShow: 2,
+              }
+            }
+          ]
+        });
+      });
+
+      $(document).ready(function(){
+        $('.slider_authors').slick({
+          dots: false,
+          infinite: true,
+          speed: 500,
+          fade: false,
+          appendArrows:'.slider-arrows-2',
           prevArrow:'<span class="slider-arrow"><i class="fas fa-chevron-left"></i></span>',
           nextArrow:'<span class="slider-arrow"><i class="fas fa-chevron-right"></i></span>',
           autoplaySpeed: 2000,

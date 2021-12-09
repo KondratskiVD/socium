@@ -8,8 +8,20 @@
   background: linear-gradient(to bottom right, #FFA175, #FA783C);
 }
 
+.text-cornflower {
+  color: #5B90F5;
+}
+
 .bg-zircon {
   background: #F7F9FF;
+}
+
+.bg-midnight {
+  background: #00143C;
+}
+
+.text-midnight {
+  color: #00143C;
 }
 
 .bg-festival {
@@ -100,7 +112,7 @@
           box-shadow: 10px 10px 30px 0px #0C234D33;
 }
 
-.slider-arrows {
+.slider-arrows, .slider-arrows-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
