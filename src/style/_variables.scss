@@ -4,9 +4,7 @@ $festival: #F9F871;
 $midnight: #00143C;
 $zircon: #F7F9FF;
 $celeste: #CFD1CE;
-
 $blue-border: #D5E2FE;
-
 $liner-blue: ( #9EBFFF, #5B90F5);
 $orange-liner: (#FFA175, #FA783C,);
 
@@ -69,12 +67,19 @@ $text-subtitle: 36px;
     background-image: url("../assets/images/card_number.png");
     background-repeat: no-repeat;
     background-size: contain;
-    
+}
+
+.user-form {
+    position: relative;
+    top: -60px
 }
 
 @media screen and (max-width: 767px){
     .sub-title {
         line-height: 0.75rem;
+    }
+    .user-form {
+        top: 0px
     }
 }
 

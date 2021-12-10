@@ -69,9 +69,17 @@
   background-size: contain;
 }
 
+.user-form {
+  position: relative;
+  top: -60px;
+}
+
 @media screen and (max-width: 767px) {
   .sub-title {
     line-height: 0.75rem;
+  }
+  .user-form {
+    top: 0px;
   }
 }
 
