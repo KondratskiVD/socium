@@ -146,6 +146,12 @@
   background-color: #5B90F5;
 }
 
+.slick-list {
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 1rem;
+}
+
 @font-face {
   font-family: "Mont Blanc";
   src: url("./assets/fonts/montblanc/MontBlanc-Trial-Black.woff2") format("woff2"), url("./assets/fonts/montblanc/MontBlanc-Trial-Black.woff") format("woff");
