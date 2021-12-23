@@ -14,6 +14,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     <script>
       $( function() {
         $( "#accordion" ).accordion({
@@ -37,27 +40,27 @@
             </div>
           </div>
           <div class="hidden md:block">
-            <select name="" id="">
+            <!-- <select name="" id="">
               <option value="RU">RU</option>
               <option value="UK">UK</option>
-            </select>
-            <button class="bg-blue-gradient text-white py-3 px-6 rounded-xl">
+            </select> -->
+            <button class="open-order bg-blue-gradient text-white py-3 px-6 rounded-xl">
               Бесплатная консультация
             </button>
           </div>
         </nav>
       </div>
       <!-- HERO -->
-      <div style="max-width: 1350px;" class="bg-zircon flex-grow mt-24 md:mt-28 m-auto w-full rounded-3xl">
+      <div style="max-width: 1350px;" class="bg-zircon flex-grow mt-24 md:mt-32 m-auto w-full rounded-3xl">
         <div class="m-auto max-w-screen-xl flex py-2 md:py-10 px-3 flex-col md:flex-row">
           <div class="md:w-1/2 md:py-10 flex flex-col items-start justify-between order-2 md:order-1">
             <div>
-              <h1 class="text-2xl md:text-5xl text-bold">
+              <h1 class="text-2xl md:text-5xl text-bold main-title">
                 Пространство <br class="hidden md:block">для развития <span class="bg-festival rounded-xl px-1 inline-block">счастливой</span> личности
               </h1>
               <p class="text-base md:text-2xl mt-6">Готовим к жизни, а не к экзаменам.</p>
             </div>
-            <button id="modal-button" class="bg-blue-gradient text-white py-3 px-12 rounded-xl b-blue border-4 w-full md:w-auto mt-8">
+            <button class="open-order bg-blue-gradient text-white py-3 px-12 rounded-xl b-blue border-4 w-full md:w-auto mt-8 btn-shadow">
               Подробнее
             </button>
           </div>
@@ -114,26 +117,26 @@
             class="rounded-2xl"
             ></video>
           </div>
-          <div class="bg-zircon mt-12 p-8 rounded-2xl shadow">
+          <div class="bg-zircon mt-12 p-12 rounded-2xl shadow">
             <h3 class="text-3xl text-bold md:hidden text-center mb-8">Спросите себя:</h3>
-            <div class="flex flex-col md:flex-row">
+            <div class="flex flex-col gap-x-32 md:flex-row">
               <div class="w-full md:w-1/2 order-2 md:order-1">
                 <h3 class="text-3xl text-bold hidden md:block">Спросите себя:</h3>
-                <ul class="list mt-8 text-base md:text-xl">
-                  <li class="mb-4">Жаловался ли ваш ребенок на <b>плохие отношения в школе?</b></li>
-                  <li class="mb-4">Чувствуете ли вы что ваш <b>ребенок попал в “плохую” компанию</b> или друзья влияют на него негативно?</li>
-                  <li class="mb-4">Замечали ли вы что ваш ребенок <b>много времени проводить в соц сетях</b> и компоютерных играх?</li>
+                <ul class="list mt-8 text-sm md:text-base md:text-xl">
+                  <li class="mb-8">Жаловался ли ваш ребенок на <b>плохие отношения в школе?</b></li>
+                  <li class="mb-8">Чувствуете ли вы что ваш <b>ребенок попал в “плохую” компанию</b> или друзья влияют на него негативно?</li>
+                  <li class="mb-8">Замечали ли вы что ваш ребенок <b>много времени проводить в соц сетях</b> и компоютерных играх?</li>
                 </ul>
               </div>
-              <div class="w-full md:w-1/2 order-1 md:order-2">
+              <div class="w-full md:w-1/3 order-1 md:order-2">
                 <img src="./assets/images/ask_your_self.png" alt="зависимость от социальных сетей">
               </div>
             </div>
             <div class="text-center">
-              <p class="mt-12 text-base md:text-xl">А может вы просто желаете что бы ваш ребенок был 
-                более счастливым? <br> Если хоть один из ваших ответов “да” - тогда этот 
+              <p class="md:mt-12 text-base md:text-xl">А может вы просто желаете что бы ваш ребенок был 
+                более счастливым? <br class="hidden md:block"> Если хоть один из ваших ответов “да” - тогда этот 
                 курс будет полезен для вашего ребенка.</p>
-              <button class="bg-blue-gradient text-white py-3 px-12 rounded-xl b-blue border-4 w-full md:w-auto m-auto mt-8">
+              <button class="open-order bg-blue-gradient text-white py-3 px-12 rounded-xl b-blue border-4 w-full md:w-auto m-auto mt-8 btn-shadow">
                 Подробнее
               </button>
             </div>
@@ -142,58 +145,61 @@
     </section>
     <!-- CHILD TEACHING -->
     <section class="m-auto max-w-screen-xl my-12 md:my-28">
-      <h2 class="text-2xl md:text-5xl text-bold mb-12 text-center">Ребенок научится</h2>
-      <article class="bg-zircon p-8 relative mt-12 rounded-lg max-w-md m-auto shadow">
-        <span class="bg_card_number">
-          1
-        </span>
-        <p class="text-center"><b>Критически мыслить</b> - умение фильтровать информацию и смотреть на ситуацию шире.</p>
-      </article>
-      <article class="bg-zircon p-8 relative pt-12 mt-12 rounded-lg max-w-md m-auto shadow">
-        <span class="bg_card_number">
-          2
-        </span>
-        <p class="text-center">Способности <b>противостоять маниауляциям</b>
-          и негативному влиянию (для защиты от финансовых пирамид, сект, мошенников и влияния социальных сетей/медиа)</p>
-      </article>
-      <article class="bg-zircon p-8 relative pt-12 mt-12 rounded-lg max-w-md m-auto shadow">
-        <span class="bg_card_number">
-          3
-        </span>
-        <p class="text-center"><b>Навыкам самопрезентации</b> и целеполагания.</p>
-      </article>
-      <article class="bg-zircon p-8 relative pt-12 mt-12 rounded-lg max-w-md m-auto shadow">
-        <span class="bg_card_number">
-          4
-        </span>
-        <p class="text-center">Способности эфективно <b>решать конфликты</b> без ущерба для отношений с окружающими</p>
-      </article>
-      <article class="bg-zircon p-8 relative pt-12 mt-12 rounded-lg max-w-md m-auto shadow">
-        <span class="bg_card_number">
-          5
-        </span>
-        <p class="text-center"><b>Профилактике зависимого поведения</b> (курение, алкоголь, наркотики, игромания).</p>
-      </article>
-      <article class="bg-zircon p-8 relative pt-12 mt-12 rounded-lg max-w-md m-auto shadow">
-        <span class="bg_card_number">
-          6
-        </span>
-        <p class="text-center">Рaзвивает <b>Эмоциональный Интеллект</b> - способность лучше понимать и варажить свои эмоции.</p>
-      </article>
-      <article class="bg-zircon p-8 relative pt-12 mt-12 rounded-lg max-w-md m-auto shadow">
-        <span class="bg_card_number">
-          7
-        </span>
-        <p class="text-center">Умению эффективно <b>взаимодействовать с семьей,</b> друзьями и  коллективом</p>
-      </article>
-      <article class="bg-zircon p-8 relative pt-12 mt-12 rounded-lg max-w-md m-auto shadow">
-        <span class="bg_card_number">
-          8
-        </span>
-        <p class="text-center">Профилактике появления стресса. Развитие <b>уверенности в себе</b> и своих силах.</p>
-      </article>
+      <h2 class="text-2xl md:text-5xl text-bold mb-12 text-center">На тренингах ребенок научится</h2>
+      <div class="relative h-auto">
+        <div class="absolute top-0 bottom-0 left-0 right-1/2 border-r-2 border-dashed" style="border-color: #5B90F5;"></div>
+        <article class="bg-zircon p-8 relative mt-12 rounded-lg max-w-md m-auto shadow">
+          <span class="bg_card_number">
+            1
+          </span>
+          <p class="text-center"><b>Критически мыслить</b> - умение фильтровать информацию и смотреть на ситуацию шире.</p>
+        </article>
+        <article class="bg-zircon p-8 relative pt-12 mt-12 rounded-lg max-w-md m-auto shadow">
+          <span class="bg_card_number">
+            2
+          </span>
+          <p class="text-center">Способности <b>противостоять маниауляциям</b>
+            и негативному влиянию (для защиты от финансовых пирамид, сект, мошенников и влияния социальных сетей/медиа)</p>
+        </article>
+        <article class="bg-zircon p-8 relative pt-12 mt-12 rounded-lg max-w-md m-auto shadow">
+          <span class="bg_card_number">
+            3
+          </span>
+          <p class="text-center"><b>Навыкам самопрезентации</b> и целеполагания.</p>
+        </article>
+        <article class="bg-zircon p-8 relative pt-12 mt-12 rounded-lg max-w-md m-auto shadow">
+          <span class="bg_card_number">
+            4
+          </span>
+          <p class="text-center">Способности эфективно <b>решать конфликты</b> без ущерба для отношений с окружающими</p>
+        </article>
+        <article class="bg-zircon p-8 relative pt-12 mt-12 rounded-lg max-w-md m-auto shadow">
+          <span class="bg_card_number">
+            5
+          </span>
+          <p class="text-center"><b>Профилактике зависимого поведения</b> (курение, алкоголь, наркотики, игромания).</p>
+        </article>
+        <article class="bg-zircon p-8 relative pt-12 mt-12 rounded-lg max-w-md m-auto shadow">
+          <span class="bg_card_number">
+            6
+          </span>
+          <p class="text-center">Рaзвивает <b>Эмоциональный Интеллект</b> - способность лучше понимать и варажить свои эмоции.</p>
+        </article>
+        <article class="bg-zircon p-8 relative pt-12 mt-12 rounded-lg max-w-md m-auto shadow">
+          <span class="bg_card_number">
+            7
+          </span>
+          <p class="text-center">Умению эффективно <b>взаимодействовать с семьей,</b> друзьями и  коллективом</p>
+        </article>
+        <article class="bg-zircon p-8 relative pt-12 mt-12 rounded-lg max-w-md m-auto shadow">
+          <span class="bg_card_number">
+            8
+          </span>
+          <p class="text-center">Профилактике появления стресса. Развитие <b>уверенности в себе</b> и своих силах.</p>
+        </article>
+      </div>
       <div class="text-center">
-        <button class="bg-blue-gradient text-white py-3 px-12 rounded-xl b-blue border-4 w-full sm:max-w-md m-auto mt-8 btn-shadow">
+        <button class="open-order bg-blue-gradient text-white py-3 px-12 rounded-xl b-blue border-4 w-full sm:max-w-md m-auto mt-8 btn-shadow">
           Присоединиться к обучению
         </button>
       </div>
@@ -258,6 +264,7 @@
                 - стили поведения/стратегии в конфликте.
               </p>
             </div>
+            <!-- 6th-->
             <h3 style="display: flex" class="justify-between"><span>7. Установки</span> <i class="fas fa-chevron-down"></i></h3>
             <div>
               <p>
@@ -315,7 +322,7 @@
         </div>
         
         <div class="text-center">
-          <button class="bg-orange-gradient text-white py-3 px-12 rounded-xl b-orange border-4 w-full sm:max-w-md m-auto mt-8 btn-shadow">
+          <button class="open-order bg-orange-gradient text-white py-3 px-12 rounded-xl b-orange border-4 w-full sm:max-w-md m-auto mt-8 btn-shadow">
             Присоединиться к обучению
           </button>
         </div>
@@ -332,17 +339,17 @@
         <li class="mb-4">Тренинги проводят опытные педагоги-психологи</li>
         <li class="mb-4">Каждый тренинг - это интерактивное занятие, во время которого участники не только получают новые знания, но и понимают как применить их для себя</li>
       </ul>
-      <div class="bg-zircon mt-12 p-8 rounded-2xl shadow">
+      <div class="bg-zircon mt-12 p-12 rounded-2xl shadow">
         <h3 class="text-2xl text-bold md:hidden text-left mb-8">Индивидуальные консультации</h3>
         <div class="w-full md:w-1/2 order-2 md:order-1">
           <h3 class="text-3xl text-bold hidden md:block">Индивидуальные консультации</h3>
         </div>
-        <div class="flex flex-col md:flex-row gap-4">
+        <div class="flex flex-col justify-between md:flex-row gap-4">
           <div class="text-center md:w-1/2 pb-4 order-2">
             <p class="mt-12 text-base md:text-xl text-left">Во время работы в группе тренер определяет психологические особенности ребенка, а также может выявить наиболее сложные для него  аспекты. 
               <br><br> Если у подростка возникает потребность в психологической помощи или дополнительном консультировании -  ребенок может проработать личные вопросы индивидуально с детским психологом вне групповых занятий.</p>
           </div>
-          <div class="w-full md:w-1/2 order-1 md:order-2 order-1">
+          <div class="w-full md:w-1/3 order-1 md:order-2 order-1">
             <img src="./assets/images/consultation.png" alt="зависимость от социальных сетей">
           </div>
         </div>
@@ -376,19 +383,20 @@
     <section class="bg-blue-gradient m-auto max-w-screen-xl rounded-2xl px-5 py-12 md:py-0 md:px-16">
       <div class="flex flex-col gap-x-4 lg:gap-x-56 md:flex-row items-center">
         <h3 class="text-white text-xl md:text-4xl mb-12 md:w-1/2">Мы можем решить психологические проблемы, но наша главная задача  - предотвратить их!</h3>
-        <form class="bg-zircon px-6 py-12 rounded-lg sm:w-96 m-auto user-form">
+        <form id="form-order"class="bg-zircon px-6 py-12 rounded-lg sm:w-96 m-auto user-form">
           <p class="text-xl font-bold mb-4">Запишитесь на бесплатную консультацию</p>
           <div class="py-3">
-            <input type="text" placeholder="Имя" class="appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            <input type="text" id="userNameForm" placeholder="Имя" class="appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
           </div>
           <div class="py-3">
-            <input type="text" placeholder="Номер" class="appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            <input type="text" id="userPhoneForm" placeholder="Номер" class="appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
           </div>
-          <div class="py-3">
-            <input type="email" placeholder="Email" class="appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-          </div>
-          <button class="bg-blue-gradient text-white py-3 mt-3 px-6 rounded-xl w-full btn-shadow">
-            Оставить заявку
+          <button class="bg-blue-gradient text-white py-3 mt-3 px-6 rounded-xl w-full btn-shadow flex justify-between items-center">
+            <span class="w-full">Оставить заявку</span>
+            <div class="spinner flex items-center hidden">
+              <div class="spinner-border animate-spin inline-block w-6 h-6 border-4 border-yellow-200 rounded-full" style="border-bottom: solid 4px transparent;" role="status">
+              </div>
+            </div>
           </button>
           <p class="mt-6 text-sm">Нажимая на кнопку «Оставить заявку» 
             вы принимаете условия пользовательского соглашения</p>
@@ -404,9 +412,9 @@
         Тренинги разработаны на основе исследований  классической и социальной психологии профессиональными педагогами-психологами.
       </p>
       <div class="slider_authors">
-        <div class="sm:p-2 shasow-lg">
-          <div class="rounded-2xl bg-zircon pb-2 shasow-lg">
-            <img src="./assets/images/veronika.png" class="w-full" alt="Комфортная атмосфера">
+        <div class="sm:p-2">
+          <div class="rounded-2xl bg-zircon pb-2 shadow">
+            <img src="./assets/images/veronika.png" class="w-full rounded-t-2xl" alt="Комфортная атмосфера">
             <div class="p-3">
               <p class="text-2xl font-bold mb-5">Вероника Михненко</p>
               <p class="mb-5">Практикующий психолог-консультант. Эксперт в вопросах детской психологии и педагогики. </p>
@@ -415,18 +423,18 @@
           </div>
         </div>
         <div class="sm:p-2">
-          <div class="rounded-2xl bg-zircon pb-2 overflow-hidden relative">
-            <img src="./assets/images/irina.png" class="w-full" alt="опытный преподаватель">
+          <div class="rounded-2xl bg-zircon pb-2 shadow">
+            <img src="./assets/images/irina.png" class="w-full rounded-t-2xl" alt="опытный преподаватель">
             <div class="p-3">
-              <p class="text-2xl font-bold mb-5">Ирина Євстигнеева</p>
+              <p class="text-2xl font-bold mb-5">Ирина Евстигнеева</p>
               <p class="mb-5">Практикующий психолог-консультант. Эксперт в вопросах детской психологии и педагогики. </p>
               <p class="text-cornflower">Читать больше<i class="fas fa-arrow-right ml-3"></i></p>
             </div>
           </div>
         </div>
         <div class="sm:p-2">
-          <div class="rounded-2xl bg-zircon overflow-hidden relative">
-            <img src="./assets/images/lena.png" class="w-full" alt="индивидуальный подход">
+          <div class="rounded-2xl bg-zircon pb-2 shadow">
+            <img src="./assets/images/lena.png" class="w-full rounded-t-2xl" alt="индивидуальный подход">
             <div class="p-3">
               <p class="text-2xl font-bold mb-5">Елена Неверович</p>
               <p class="mb-5">Практикующий психолог-консультант. Эксперт в вопросах детской психологии и педагогики. </p>
@@ -460,26 +468,127 @@
       </div>
     </section>
     <!-- MODALS -->
-    <!-- <form id="dialog-form" class="bg-zircon px-6 py-12 rounded-lg sm:w-96 m-auto user-form fixed">
-      <p class="text-xl font-bold mb-4">Запишитесь на бесплатную консультацию</p>
-      <div class="py-3">
-        <input type="text" placeholder="Имя" class="appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-      </div>
-      <div class="py-3">
-        <input type="text" placeholder="Номер" class="appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-      </div>
-      <div class="py-3">
-        <input type="email" placeholder="Email" class="appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-      </div>
-      <button class="bg-blue-gradient text-white py-3 mt-3 px-6 rounded-xl w-full btn-shadow">
-        Оставить заявку
-      </button>
-      <p class="mt-6 text-sm">Нажимая на кнопку «Оставить заявку» 
-        вы принимаете условия пользовательского соглашения</p>
-    </form> -->
-    <script type="text/javascript">      
+    <div id="modal-layout" class="hidden top-0 left-0 right-0 bottom-0 bg-black opacity-50 z-40 fixed">
+    </div>
+    <div id="modal-order" class="hidden left-1/2 top-1/2 z-50 fixed w-full sm:w-96 px-4" style="transform: translate(-50%, -50%);">
+      <form id="dialog-form" class="bg-zircon px-6 py-12 rounded-lg w-full sm:w-96 m-auto">
+        <p class="text-xl font-bold mb-4">Запишитесь на бесплатную консультацию</p>
+        <div class="py-3">
+          <input type="text" id="userName" placeholder="Имя" class="appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+        <div class="py-3">
+          <input type="text" id="userPhone" placeholder="Номер" class="appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+        <button class="bg-blue-gradient text-white py-3 mt-3 px-6 rounded-xl w-full btn-shadow flex justify-between items-center">
+          <span class="w-full">Оставить заявку</span>
+          <div class="spinner flex items-center hidden">
+            <div class="spinner-border animate-spin inline-block w-6 h-6 border-4 border-yellow-200 rounded-full" style="border-bottom: solid 4px transparent;" role="status">
+            </div>
+          </div>
+        </button>
+        <p class="mt-6 text-sm">Нажимая на кнопку «Оставить заявку» 
+          вы принимаете условия пользовательского соглашения</p>
+      </form>
+    </div>
+    <!-- TOAST -->
+    <div id="toast-success" class="fixed bg-green-400 text-white p-2 top-5 border-2 border-white right-5 z-50 hidden animate-bounce">
+      Заявка отправлена
+    </div>
+    <div id="toast-error" class="fixed bg-red-400 text-white p-2 top-5 border-2 border-white right-5 z-50 hidden animate-bounce">
+      Заполните все поля
+    </div>
+    
+    <script type="text/javascript">
+      const firebaseConfig = {
+        apiKey: "AIzaSyB5EjAyOUz8MRiSwvflHOIonCO40Ot4C9k",
+        authDomain: "socium-596f9.firebaseapp.com",
+        projectId: "socium-596f9",
+        storageBucket: "socium-596f9.appspot.com",
+        messagingSenderId: "873254647439",
+        appId: "1:873254647439:web:6514b9ac001618024322fa"
+      };
+
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+      console.log('app', db);
+
       $(document).ready(function(){
         // MODAL
+        $('.open-order').on("click", () => {
+          $('#modal-layout').removeClass('hidden');
+          $('#modal-order').removeClass('hidden');
+        })
+        $('#modal-layout').on("click", () => {
+          $('#modal-layout').addClass('hidden');
+          $('#modal-order').addClass('hidden');
+        })
+        // SENT FORM
+        $('#form-order').submit((e) => {
+          e.preventDefault();
+          $('#toast-success').removeClass('hidden')
+              setTimeout(() => {
+                $('#toast-success').addClass('hidden')
+              }, 3000)
+          const userNameForm = $('#userNameForm').val();
+          const userPhoneForm = $('#userPhoneForm').val();
+          if(!(userNameForm && userPhoneForm)) {
+            $('#toast-error').removeClass('hidden')
+              setTimeout(() => {
+                $('#toast-error').addClass('hidden')
+              }, 3000)
+          } else {
+            const sentDataForm = async () => {
+              $('.spinner').removeClass('hidden')
+              await db.collection('orders')
+                .add({
+                  userName: userNameForm,
+                  userPhone: userPhoneForm,
+                })  
+              $('.spinner').addClass('hidden');
+              $('#userNameForm').val('');
+              $('#userPhoneForm').val('');
+              $('#toast-success').removeClass('hidden')
+              setTimeout(() => {
+                $('#toast-success').addClass('hidden')
+              }, 3000)
+          }
+          sentDataForm()
+          }
+        })
+
+        $('#dialog-form').submit((e) => {
+          e.preventDefault();
+          const userName = $('#userName').val();
+          const userPhone = $('#userPhone').val();
+          if(!(userName && userPhone)) {
+            $('#toast-error').removeClass('hidden')
+              setTimeout(() => {
+                $('#toast-error').addClass('hidden')
+              }, 3000)
+          } else {
+            const sentData = async () => {
+              $('.spinner').removeClass('hidden')
+              await db.collection('orders')
+                .add({
+                  userName,
+                  userPhone,
+                })  
+              $('.spinner').addClass('hidden');
+              $('#modal-layout').addClass('hidden');
+              $('#modal-order').addClass('hidden');
+              $('#userName').val('');
+              $('#userPhone').val('');
+              
+              $('#toast').removeClass('hidden')
+              setTimeout(() => {
+                $('#toast').addClass('hidden')
+              }, 3000)
+          }
+          sentData()
+          }
+          
+        })
+
 
         // SLIDERS
         const sliderConfig = {
@@ -524,5 +633,6 @@
         });
       });
     </script>
+ 
   </body>
 </html>
