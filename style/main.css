@@ -158,22 +158,12 @@
 }
 
 @font-face {
-  font-family: "Mont Blanc";
-  src: url("../assets/fonts/montblanc/MontBlanc-Trial-Black.woff2") format("woff2"), url("../assets/fonts/montblanc/MontBlanc-Trial-Black.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Mont Blanc Regular";
-  src: url("../assets/fonts/montblanc/MontBlanc-Trial-Regular.woff2") format("woff2"), url("../assets/fonts/montblanc/MontBlanc-Trial-Regular.woff") format("woff");
-}
-
-@font-face {
   font-family: "Mont Blanc Bold";
   src: url("../assets/fonts/montblanc/MontBlanc-Trial-Bold.woff2") format("woff2"), url("../assets/fonts/montblanc/MontBlanc-Trial-Bold.woff") format("woff");
 }
 
 html {
-  font-family: 'Mont Blanc Regular', Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #00143C;
 }
 
@@ -199,4 +189,23 @@ html {
   float: left;
   border-radius: 50%;
 }
+
+.accordion-enter-active {
+  -webkit-animation: dropdown .3s linear;
+          animation: dropdown .3s linear;
+}
+
+.accordion-leave-active {
+  animation: dropdown .3s linear reverse;
+}
+
+@-webkit-keyframes dropdown {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 90px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -28,3 +28,22 @@ html {
     float: left;
     border-radius: 50%;
 }
+
+.accordion-enter-active {
+    animation: dropdown .3s linear;
+  }
+.accordion-leave-active {
+  animation: dropdown .3s linear reverse;
+}
+@keyframes dropdown {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 90px;
+  }
+}
+
+.hello {
+  background: #000;
+}
