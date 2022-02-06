@@ -133,9 +133,9 @@ const VAccordion = {
         </div>
         <transition name="accordion">
             <div v-show="chosenTab === index">
-            <div class="pt-2 pb-2 px-4 text-gray-900 bg-white rounded-lg mt-4">
-                <p v-for="text in tab.texts">{{ text }}</p>
-            </div>
+                <div class="pt-2 pb-2 px-4 text-gray-900 bg-white rounded-lg mt-4">
+                    <p v-for="text in tab.texts">{{ text }}</p>
+                </div>
             </div>
         </transition>
         </div>
